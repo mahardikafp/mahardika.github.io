@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<title>Caffeine Coffee & Roastery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("news2.jpg");
+  min-height: 90%;
+}
+</style>
+<body>
+<audio src="sofi_bgm.mp3" autoplay loop > 
+</audio>
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-center w3-padding">
+    <span class="w3-tag w3-xlarge">We Start Brewing At 12.00 PM - 23.00 PM</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">Home<br>Caffeine Coffee & Roastery</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>Caffeine Coffee & Roastery</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Tap Here To See Our Service</a></p>
+  </div>
+</header>
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Home</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Our Coffee');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Our Coffee</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Booking Online Class');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Booking Online Class</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Our Single Origin');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Contac Us</div>
+      </a>
+    </div>
+
+    <div id="Our Coffee" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Espresso</b> <span class="w3-right w3-tag w3-brown-yellow w3-round">Rp.8.0000</span></h1>
+      <p class="w3-text-brown">Coffee flavors that are processed through an espresso machine</p>
+      <hr>
+   
+      <h1><b>Doppio</b> <span class="w3-right w3-tag w3-brown-yellow w3-round">Rp.12.000</span></h1>
+      <p class="w3-text-brown">Espresso double shot</p>
+      <hr>
+      
+      <h1><b>Coffee Latte</b> <span class="w3-right w3-tag w3-brown-yellow w3-round">Rp.14.000</span></h1>
+      <p class="w3-text-brown">Espresso based mix with steamed milk</p>
+      <hr>
+
+      <h1><b>Cappucino</b> <span class="w3-right w3-tag w3-brown-yellow w3-round">Rp.10.000</span></h1>
+      <p class="w3-text-brown">espresso based mix with steamed milk</p>
+      <hr>
+
+      <h1><b>Single Origin with Manual Brew Method</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark w3-round">Rp.14.000-20.000</span></h1>
+      <p class="w3-text-brown">Our signature coffee beans are processed by reliable baristas to produce a delicious cup of coffee </p>
+      <hr>
+    </div>
+
+    <div id="Booking Online Class" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Beginer Class</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Start From Rp.1.000.000</span></h1>
+      <p class="w3-text-grey">In this class we teach everyone who wants to makes a good cup of Coffee</p>
+      <hr>
+      
+      <h1><b>Medium Class</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Start From Rp.3.000.000</span></h1>
+      <p class="w3-text-grey">In here we teach everyone who wants to be a beginer barista</p>
+      <hr>
+      
+      <h1><b>Advance Class</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Start from Rp.5.000.000</span></h1>
+      <p class="w3-text-grey">In this class we teach a beginer baristas to be a good baristas</p>
+    </div>
+
+
+
+<div class="w3-container w3-padding-64 w3-brown w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contac Us</h1>
+    <p style="text-align:center">Jember, East Java, Indonesia</p>
+    <p>Do not hesitate to contact us</p>
+    <p class="w3-xxlarge">Please fill out the form below: </p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Waktu" required name="Waktu" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Request" required name="Request"></p>
+      <p><button class="w3-button w3-red w3-block" type="submit">Submit</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Caffeine Coffee & Roastery by Mohammad Sofiyulloh - 192410102014</p>
+  <p>Caffeine Coffee & Roastery by Mahardika Febri Pratama - 192410102048</p>
+</footer>
+
+<script>
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
